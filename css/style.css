@@ -100,7 +100,7 @@ body {
   right: 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .slider {
     position: relative;
     width: 400px;
