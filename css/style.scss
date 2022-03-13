@@ -28,17 +28,16 @@ body {
    position: relative;
    width: 798px;
    height: 500px;
-   
+
    box-shadow: 10px 10px 44px -18px black;
    display: flex;
-  
+
    transition: 0.8s;
 
    .slide {
       position: relative;
       width: 100%;
       height: 100%;
-      
 
       span {
          position: absolute;
@@ -54,8 +53,7 @@ body {
       img {
          height: 100%;
          width: 800px;
-
-         
+         border-radius: 20px;
       }
    }
 
@@ -115,7 +113,6 @@ body {
 
 @media screen and (max-width: 450px) {
    .slider {
-      position: relative;
       width: 340px;
       height: 250px;
       .slide {
