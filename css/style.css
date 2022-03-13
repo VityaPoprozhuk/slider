@@ -31,6 +31,7 @@ body {
   position: relative;
   width: 798px;
   height: 500px;
+  border-radius: 20px;
   box-shadow: 10px 10px 44px -18px black;
   display: flex;
   transition: 0.8s;
@@ -103,15 +104,15 @@ body {
   right: 10px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .slider {
     position: relative;
-    width: 250px;
-    height: 180px;
+    width: 340px;
+    height: 200px;
   }
   .slider .slide img {
-    width: 250px;
-    height: 180px;
+    width: 340px;
+    height: 200px;
   }
 
   .btn img {
