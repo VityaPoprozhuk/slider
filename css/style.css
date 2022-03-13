@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #b6a7f8, #e7b75d);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-slider {
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 798px;
+  height: 500px;
+  max-height: 1000px;
+  box-shadow: 10px 10px 44px -18px black;
+  display: flex;
+  transition: 0.8s;
+}
+.slider .slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.slider .slide span {
+  position: absolute;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  background-color: rgba(24, 17, 17, 0.3);
+  border-radius: 10%;
+  padding: 5px;
+  right: 40px;
+  top: 20px;
+}
+.slider .slide img {
+  height: 100%;
+  width: 800px;
+}
+.slider .slide.active {
+  display: block;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+.dots .dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #727272;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+.dots .dot.active {
+  transition: 0.8s;
+  background-color: #181111;
+}
+
+.dot:hover {
+  box-shadow: 0px 0px 10px 2px rgba(24, 231, 117, 0.74);
+  transition: 0.5s;
+}
+
+.btn {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.btn img {
+  height: 70px;
+  filter: invert(0.9);
+}
+
+.btn-prew {
+  left: 10px;
+  opacity: 0.4;
+}
+
+.btn-next {
+  right: 10px;
+}
