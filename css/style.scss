@@ -28,17 +28,17 @@ body {
    position: relative;
    width: 798px;
    height: 500px;
-   border-radius: 20px;
+   
    box-shadow: 10px 10px 44px -18px black;
    display: flex;
-   // flex-direction: column;
+  
    transition: 0.8s;
 
    .slide {
       position: relative;
       width: 100%;
       height: 100%;
-      transition: 0.5s;
+      
 
       span {
          position: absolute;
@@ -55,7 +55,7 @@ body {
          height: 100%;
          width: 800px;
 
-         // border-radius: 20px;
+         
       }
    }
 
@@ -117,11 +117,11 @@ body {
    .slider {
       position: relative;
       width: 340px;
-      height: 200px;
+      height: 250px;
       .slide {
          img {
             width: 340px;
-            height: 200px;
+            height: 250px;
          }
       }
    }
