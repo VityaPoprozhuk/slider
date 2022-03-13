@@ -54,7 +54,6 @@ body {
 .slider .slide img {
   height: 100%;
   width: 800px;
-  border-radius: 20px;
 }
 .slider .slide.active {
   display: block;
