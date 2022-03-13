@@ -100,17 +100,17 @@ body {
   right: 10px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
   .slider {
     position: relative;
-    width: 400px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
   }
   .slider .slide img {
-    width: 400px;
+    width: 250px;
   }
 
   .btn img {
-    height: 70px;
+    height: 20px;
   }
 }
