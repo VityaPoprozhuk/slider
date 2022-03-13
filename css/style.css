@@ -6,6 +6,7 @@
 
 body {
   background: linear-gradient(45deg, #b6a7f8, #e7b75d);
+  background-repeat: no-repeat;
   min-height: 100vh;
   margin: 0;
 }
@@ -15,6 +16,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.content h1 {
+  text-align: center;
 }
 
 .flex-slider {
@@ -27,7 +31,6 @@ body {
   position: relative;
   width: 798px;
   height: 500px;
-  max-height: 1000px;
   box-shadow: 10px 10px 44px -18px black;
   display: flex;
   transition: 0.8s;
@@ -100,14 +103,15 @@ body {
   right: 10px;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .slider {
     position: relative;
     width: 250px;
-    height: 150px;
+    height: 180px;
   }
   .slider .slide img {
     width: 250px;
+    height: 180px;
   }
 
   .btn img {
