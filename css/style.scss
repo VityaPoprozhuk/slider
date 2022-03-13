@@ -61,7 +61,6 @@ body {
 }
 
 .dots {
-   
    display: flex;
    justify-content: center;
    .dot {
@@ -87,7 +86,6 @@ body {
    top: 50%;
    transform: translateY(-50%);
    cursor: pointer;
-   
 
    img {
       height: 70px;
@@ -109,4 +107,20 @@ body {
    right: 10px;
    //  border-bottom-left-radius: 50%;
    //  border-top-left-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+   .slider {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      .slide {
+         img {
+            width: 400px;
+         }
+      }
+   }
+   .btn img {
+      height: 70px;
+   }
 }
