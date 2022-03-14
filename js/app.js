@@ -6,20 +6,18 @@ const slider = document.querySelector('.slider');
 const slide = document.querySelectorAll('.slide');
 const widthSlider = parseInt(window.getComputedStyle(slider).width);
 const dot = document.querySelector('.dot');
-
 let current = 0;
 next.addEventListener('click', () => {
    if (current < (slide.length - 1) * widthSlider || current === 0) {
       prew.style.opacity = '1';
       current += widthSlider;
       slider.style.transform = `translateX(${-current}px)`;
-
       if (current === (slide.length - 1) * widthSlider) {
          next.style.opacity = '0.4';
-         alert('( ͡° ͜ʖ ͡°)');
       }
+
+      activeDots();
    }
-   activeDots();
 });
 
 prew.addEventListener('click', () => {
