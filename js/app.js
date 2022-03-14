@@ -16,6 +16,7 @@ next.addEventListener('click', () => {
 
       if (current === (slide.length - 1) * widthSlider) {
          next.style.opacity = '0.4';
+         alert('( ͡° ͜ʖ ͡°)');
       }
    }
    activeDots();
@@ -39,7 +40,6 @@ function activeDots() {
    }
    dots[current / widthSlider].classList.add('active');
 }
-
 
 ///////////////////////////////
 // let index = 0;
