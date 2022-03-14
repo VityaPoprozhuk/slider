@@ -21,6 +21,7 @@ body {
 }
 .flex-slider {
    overflow: hidden;
+   -webkit-overflow-scrolling: touch;
    position: relative;
    border-radius: 20px;
 }
